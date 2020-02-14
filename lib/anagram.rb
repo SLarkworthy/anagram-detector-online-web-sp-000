@@ -9,8 +9,8 @@ class Anagram
   def match(possibilities_array)
     word_letters = @word.split("").sort
     x = []
-    possibilities_array.each do |word|
-      y = word.split("").sort
+    possibilities_array.find do |word|
+      word.split("").sort
       x << y
     end
     x
