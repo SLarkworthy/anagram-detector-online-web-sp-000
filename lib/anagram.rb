@@ -10,7 +10,7 @@ class Anagram
     word_letters = @word.split("").sort
     x = []
     possibilities_array.each do |word|
-      y = word.split
+      y = word.split("").sort
       x << y
     end
     x
