@@ -7,11 +7,11 @@ class Anagram
   end
   
   def match(possibilities_array)
-    word_letters = @word.split("")
+    word_letters = @word.split("").sort
     puts word_letters
     x = []
     possibilities_array.each do |word|
-      if word.split.sort == word_letters.sort
+      if word.split.sort == word_letters
         x << word
       end
     end
