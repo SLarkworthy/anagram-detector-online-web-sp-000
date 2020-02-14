@@ -6,7 +6,10 @@ class Anagram
     
   end
   
-  def match(array)
+  def match(possibilities_array)
+    word_letters = @word.spit("")
+    possibilities_array.each do |word|
+      word.split.sort
     
   end
   
