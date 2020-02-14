@@ -10,8 +10,11 @@ class Anagram
     word_letters = @word.split("").sort
     matched_word = []
     possibilities_array.each do |word|
-      matched_word << word if word_letters = word.split("").sort
+      if word_letters = word.split("").sort
+        matched_word << word
+      end
     end
+    matched_word
   end
   
 end
