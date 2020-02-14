@@ -9,7 +9,7 @@ class Anagram
   def match(possibilities_array)
     word_letters = @word.spit("")
     possibilities_array.find do |word|
-      word.split.sort = word_letters.sort
+      word.split.sort == word_letters.sort
     end
     
   end
