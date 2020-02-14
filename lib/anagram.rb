@@ -11,6 +11,7 @@ class Anagram
     possibilities_array.each do |word|
       if word.split.sort == word_letters.sort
         word
+      end
     end
     
   end
